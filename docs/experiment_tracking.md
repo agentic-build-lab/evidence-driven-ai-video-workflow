@@ -58,3 +58,11 @@ The workflow may generate auditable material and internal samples, but it must n
 - Fallback artifact: `examples/production_packages/cnnic_short_video_users_offline_cli_20260705T000000Z/preview.html` was generated for review when browser/ffmpeg are unavailable.
 - Material risk: no new public-reference videos, original large videos, browser caches, cookies, API keys, or digital-avatar assets were committed.
 - Agent command correction: `python -m pytest tests/test_workflow_contracts.py && npm run typecheck` and `npm run typecheck && python scripts/workflow/audit_environment.py` were mistakenly attempted from `apps/remotion_director`, causing repository-root paths to fail. The commands were rerun from the correct working directories: pytest/audit from repository root and npm typecheck from `apps/remotion_director`.
+
+## Media review milestone on 2026-07-05
+
+- Added `docs/media_retention_policy.md` to separate keep-in-Git artifacts from large/risky/unclear-rights media that should only leave manifests and diagnostics.
+- Added `scripts/workflow/build_sample_gallery.py` and generated `docs/sample_gallery.md` with package paths, preview availability, quality grade, and retention recommendation.
+- Promoted `examples/production_packages/cnnic_short_video_users_offline_cli_20260705T000000Z` to a B-grade offline review fixture with `quality_review.md`, `contact_sheet.md`, and `recipe.md`.
+- Kept `examples/production_packages/cnnic_short_video_users_20260705T000000Z` as a C-grade historical baseline: keep manifest-only until preview/recipe coverage exists.
+- Real MP4 remains blocked in this container by missing ffmpeg and Remotion Chrome/Chromium, so `preview.html`, package manifests, quality review, contact-sheet placeholder, and render report are the review artifacts for this milestone.

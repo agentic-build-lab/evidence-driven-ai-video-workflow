@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TOPIC_BRIEF = ROOT / "examples" / "topic_briefs" / "short-video-scale-makes-evidence-first-ai-video-workflows-necessary_20260705T000000Z.json"
 PACKAGE = ROOT / "examples" / "production_packages" / "cnnic_short_video_users_offline_cli_20260705T000000Z"
 PRIVACY_PRESET = ROOT / "scripts" / "privacy_mosaic" / "presets" / "douyin_bottom_caption_and_logo.json"
+GALLERY = ROOT / "docs" / "sample_gallery.md"
 
 
 def run(command: list[str]) -> subprocess.CompletedProcess[str]:
@@ -57,3 +58,11 @@ def test_privacy_mask_preset_contract() -> None:
             assert 0 <= region[key] <= 1
         assert region["width"] > 0
         assert region["height"] > 0
+
+
+def test_sample_gallery_lists_review_fixture() -> None:
+    text = GALLERY.read_text(encoding="utf-8")
+    assert "cnnic_short_video_users_offline_cli_20260705T000000Z" in text
+    assert "retain_as_offline_review_fixture" in text
+    assert "preview.html" in text
+    assert "recipe.md" in text
