@@ -1,0 +1,15 @@
+﻿{
+  "id": "oceanengine_trendinsight",
+  "label": "抖音指数（原巨量算数）",
+  "url": "https://trendinsight.oceanengine.com/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "challengeDetected": false,
+  "highlights": [
+    "抖音指数",
+    "内容消费趋势"
+  ],
+  "boxes": []
+}

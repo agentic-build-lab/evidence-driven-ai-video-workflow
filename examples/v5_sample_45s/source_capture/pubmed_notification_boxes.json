@@ -1,0 +1,18 @@
+﻿{
+  "id": "pubmed_notification",
+  "label": "PubMed通知干扰研究",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/26121498/",
+  "title": "正在检查您的浏览器 - reCAPTCHA",
+  "challengeDetected": true,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "needles": [
+    "The attentional cost of receiving a cell phone notification",
+    "notification"
+  ],
+  "selectedMatches": [],
+  "allMatches": [],
+  "bodyTextSample": "正在检查浏览器以便让您访问 pubmed.ncbi.nlm.nih.gov…\n如果系统在 5 秒后未自动将您重定向，请点击此处。"
+}

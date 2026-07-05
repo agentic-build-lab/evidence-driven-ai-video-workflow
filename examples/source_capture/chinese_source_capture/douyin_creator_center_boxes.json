@@ -1,0 +1,16 @@
+﻿{
+  "id": "douyin_creator_center",
+  "label": "抖音创作服务平台",
+  "url": "https://creator.douyin.com/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "challengeDetected": false,
+  "highlights": [
+    "抖音创作者的专属服务平台",
+    "授权管理",
+    "内容管理"
+  ],
+  "boxes": []
+}

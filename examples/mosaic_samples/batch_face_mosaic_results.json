@@ -1,0 +1,26 @@
+﻿[
+    {
+        "id":  "douyin_ai_avatar_traffic_question",
+        "input":  "work/reference_video_probe/douyin_ai_avatar_traffic_question\\public_sample_8s.mp4",
+        "output":  "outputs/mosaic_samples/douyin_ai_avatar_traffic_question_face_mosaic.mp4",
+        "debug":  "outputs/mosaic_samples/douyin_ai_avatar_traffic_question_face_mosaic.json",
+        "exists":  true,
+        "size":  2338936
+    },
+    {
+        "id":  "douyin_ai_video_generation_tool",
+        "input":  "work/reference_video_probe/douyin_ai_video_generation_tool\\public_sample_8s.mp4",
+        "output":  "outputs/mosaic_samples/douyin_ai_video_generation_tool_face_mosaic.mp4",
+        "debug":  "outputs/mosaic_samples/douyin_ai_video_generation_tool_face_mosaic.json",
+        "exists":  true,
+        "size":  1035297
+    },
+    {
+        "id":  "douyin_jianying_digital_avatar",
+        "input":  "work/reference_video_probe/douyin_jianying_digital_avatar\\public_sample_8s.mp4",
+        "output":  "outputs/mosaic_samples/douyin_jianying_digital_avatar_face_mosaic.mp4",
+        "debug":  "outputs/mosaic_samples/douyin_jianying_digital_avatar_face_mosaic.json",
+        "exists":  true,
+        "size":  1913302
+    }
+]

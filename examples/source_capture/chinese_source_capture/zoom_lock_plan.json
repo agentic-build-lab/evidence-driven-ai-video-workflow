@@ -1,0 +1,263 @@
+﻿{
+  "generatedAt": "2026-07-04T10:53:49.247Z",
+  "plans": [
+    {
+      "id": "bilibili_openhome_doc",
+      "label": "Bilibili 开放平台文档",
+      "url": "https://openhome.bilibili.com/doc",
+      "status": "ok",
+      "primaryText": "视频管理",
+      "focusRect": {
+        "x": 1068,
+        "y": 335,
+        "width": 88,
+        "height": 25,
+        "right": 1156,
+        "bottom": 360
+      },
+      "remotion": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "display": {
+          "width": 1120,
+          "height": 620
+        },
+        "fullView": {
+          "scale": 0.74,
+          "translateX": 0,
+          "translateY": 0,
+          "durationFrames": 70
+        },
+        "zoomToFocus": {
+          "scale": 2.8,
+          "translateX": -2554,
+          "translateY": -694,
+          "durationFrames": 42,
+          "easing": "cameraEase"
+        },
+        "lockedHold": {
+          "durationFrames": 85,
+          "allowCameraMotion": false,
+          "allowedMotion": [
+            "marker_draw",
+            "underline_draw",
+            "dim_non_focus"
+          ]
+        },
+        "marker": {
+          "x": 1068,
+          "y": 335,
+          "width": 88,
+          "height": 25,
+          "delayAfterZoomFrames": 8
+        }
+      }
+    },
+    {
+      "id": "capcut_cn",
+      "label": "剪映官网",
+      "url": "https://www.capcut.cn/",
+      "status": "ok",
+      "primaryText": "全能AI创作伙伴",
+      "focusRect": {
+        "x": 120,
+        "y": 385.125,
+        "width": 305.96875,
+        "height": 24,
+        "right": 425.96875,
+        "bottom": 409.125
+      },
+      "remotion": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "display": {
+          "width": 1120,
+          "height": 620
+        },
+        "fullView": {
+          "scale": 0.74,
+          "translateX": 0,
+          "translateY": 0,
+          "durationFrames": 70
+        },
+        "zoomToFocus": {
+          "scale": 2.05,
+          "translateX": 0,
+          "translateY": -535,
+          "durationFrames": 42,
+          "easing": "cameraEase"
+        },
+        "lockedHold": {
+          "durationFrames": 85,
+          "allowCameraMotion": false,
+          "allowedMotion": [
+            "marker_draw",
+            "underline_draw",
+            "dim_non_focus"
+          ]
+        },
+        "marker": {
+          "x": 120,
+          "y": 385,
+          "width": 306,
+          "height": 24,
+          "delayAfterZoomFrames": 8
+        }
+      }
+    },
+    {
+      "id": "douyin_creator_center",
+      "label": "抖音创作服务平台",
+      "url": "https://creator.douyin.com/",
+      "status": "no_visible_match",
+      "reason": "No highlighted text box was visible in the captured viewport. Recapture with scroll or a better focus target."
+    },
+    {
+      "id": "douyin_open_docs",
+      "label": "抖音开放平台文档中心",
+      "url": "https://developer.open-douyin.com/docs-page",
+      "status": "no_visible_match",
+      "reason": "No highlighted text box was visible in the captured viewport. Recapture with scroll or a better focus target."
+    },
+    {
+      "id": "douyin_publish_solution",
+      "label": "抖音开放平台：内容发布",
+      "url": "https://open.douyin.com/platform/resource/docs/ability/content-management/douyin-publish-solution",
+      "status": "ok",
+      "primaryText": "直接发布视频或图片内容至抖音",
+      "focusRect": {
+        "x": 400,
+        "y": 198.078125,
+        "width": 588.234375,
+        "height": 19,
+        "right": 988.234375,
+        "bottom": 217.078125
+      },
+      "remotion": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "display": {
+          "width": 1120,
+          "height": 620
+        },
+        "fullView": {
+          "scale": 0.74,
+          "translateX": 0,
+          "translateY": 0,
+          "durationFrames": 70
+        },
+        "zoomToFocus": {
+          "scale": 1.15,
+          "translateX": -238,
+          "translateY": 40,
+          "durationFrames": 42,
+          "easing": "cameraEase"
+        },
+        "lockedHold": {
+          "durationFrames": 85,
+          "allowCameraMotion": false,
+          "allowedMotion": [
+            "marker_draw",
+            "underline_draw",
+            "dim_non_focus"
+          ]
+        },
+        "marker": {
+          "x": 400,
+          "y": 198,
+          "width": 588,
+          "height": 19,
+          "delayAfterZoomFrames": 8
+        }
+      }
+    },
+    {
+      "id": "douyin_video_data",
+      "label": "抖音开放平台：视频数据",
+      "url": "https://developer.open-douyin.com/capacity-center-page/capacity-detail/7180522194714230845",
+      "status": "no_visible_match",
+      "reason": "No highlighted text box was visible in the captured viewport. Recapture with scroll or a better focus target."
+    },
+    {
+      "id": "jimeng_ai",
+      "label": "即梦 AI",
+      "url": "https://jimeng.jianying.com/ai-tool/home",
+      "status": "no_visible_match",
+      "reason": "No highlighted text box was visible in the captured viewport. Recapture with scroll or a better focus target."
+    },
+    {
+      "id": "oceanengine_trendinsight",
+      "label": "抖音指数（原巨量算数）",
+      "url": "https://trendinsight.oceanengine.com/",
+      "status": "no_visible_match",
+      "reason": "No highlighted text box was visible in the captured viewport. Recapture with scroll or a better focus target."
+    },
+    {
+      "id": "volcengine_avatar",
+      "label": "火山引擎虚拟数字人",
+      "url": "https://www.volcengine.com/product/avatar",
+      "status": "no_visible_match",
+      "reason": "No highlighted text box was visible in the captured viewport. Recapture with scroll or a better focus target."
+    },
+    {
+      "id": "youyan3d",
+      "label": "魔珐有言",
+      "url": "https://www.youyan3d.com/",
+      "status": "ok",
+      "primaryText": "3D数字人AI视频平台",
+      "focusRect": {
+        "x": 222.21875,
+        "y": 233,
+        "width": 995.546875,
+        "height": 87,
+        "right": 1217.765625,
+        "bottom": 320
+      },
+      "remotion": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "display": {
+          "width": 1120,
+          "height": 620
+        },
+        "fullView": {
+          "scale": 0.74,
+          "translateX": 0,
+          "translateY": 0,
+          "durationFrames": 70
+        },
+        "zoomToFocus": {
+          "scale": 1.15,
+          "translateX": -268,
+          "translateY": -39,
+          "durationFrames": 42,
+          "easing": "cameraEase"
+        },
+        "lockedHold": {
+          "durationFrames": 85,
+          "allowCameraMotion": false,
+          "allowedMotion": [
+            "marker_draw",
+            "underline_draw",
+            "dim_non_focus"
+          ]
+        },
+        "marker": {
+          "x": 222,
+          "y": 233,
+          "width": 996,
+          "height": 87,
+          "delayAfterZoomFrames": 8
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+﻿id,type,path_or_url,status,use_in_sample,notes
+generated_late_night_scrolling,generated_image,work/v5_sample/assets/generated_late_night_scrolling.png,ready,0-7s opening,cinematic night scrolling scene; no readable logos or platform UI
+generated_feed_montage,generated_image,work/v5_sample/assets/generated_feed_montage.png,ready,7-18s montage,abstract short-video feed overload; no real platform logos
+cnnic_report_page_40,official_pdf_render,work/v5_sample/assets/cnnic_report_page_40.png,ready,18-32s official report,CNNIC report page copied from v4 source asset
+cnnic_report_page_40_bbox,pdf_bbox,outputs/v5_sample_45s/source_capture/cnnic_report_page_40_bbox.json,ready,18-32s highlight,contains lineBoxes/underline/background metadata
+xinhua_av_2026_top,official_web_screenshot,work/v5_sample/assets/xinhua_av_2026_top.png,ready,32-53s source identity,2x capture; shows Xinhua page identity and title before zoom
+xinhua_av_2026_focus,official_web_screenshot,work/v5_sample/assets/xinhua_av_2026_focus.png,ready,32-53s zoom target,2x focus screenshot after scrolling to main paragraph
+xinhua_av_2026_annotated,official_web_screenshot,work/v5_sample/assets/xinhua_av_2026_annotated.png,ready,32-53s highlight,2x annotated screenshot; only one primary target is marked
+xinhua_av_2026_boxes,dom_bbox,outputs/v5_sample_45s/source_capture/xinhua_av_2026_boxes.json,ready,32-53s highlight,selectedMatches contains the primary DOM rects
+v5_sample_45s_voiceover,tts_audio,work/v5_sample/assets/v5_sample_45s_voiceover.mp3,ready,temp voiceover,edge-tts placeholder retained only as timing reference
+v5_sample_45s_voiceover_vtt,timing_subtitles,work/v5_sample/assets/v5_sample_45s_voiceover.vtt,ready,timing reference,can be used to refine cue timings
+heygen_lip_sync_smoke_test,talking_avatar,work/v5_sample/assets/heygen_lip_sync_smoke_test.webm,ready,lip-sync proof,7.09s transparent webm smoke test; not final presenter choice
+v5_full_presenter_old,transparent_talking_avatar,work/v5_sample/assets/heygen_v5_sample_45s_presenter.webm,ready,archive,HeyGen job 5e38df67ba7a4f6aa3abe93e81c813ae; usable but slightly short
+v5_full_presenter_regenerated,transparent_talking_avatar,work/v5_sample/assets/heygen_v5_sample_lipsync_presenter.webm,ready,corner presenter,HeyGen job dacca47fb646488489d00f24cbd47727; final audio and mouth source
+remotion_public_presenter,transparent_talking_avatar,apps/remotion_director/public/local_assets/v5_sample/heygen_v5_sample_45s_presenter.webm,ready,corner presenter,copied public asset used by Remotion
+pubmed_notification,official_paper_page,work/v5_sample/assets/pubmed_notification_top.png,blocked,not used in sample,hit reCAPTCHA; use MANUAL_CAPTURE=1 when needed
+codex_v5_sample_lipsync,final_video,outputs/v5_sample_45s/codex_v5_sample_lipsync.mp4,ready,deliverable,1920x1080 30fps about 53.03s with AAC stereo audio
+codex_v5_sample_lipsync_contact_sheet,qa_image,outputs/v5_sample_45s/codex_v5_sample_lipsync_contact_sheet.jpg,ready,qa,frame overview used to inspect scene order and visual coverage

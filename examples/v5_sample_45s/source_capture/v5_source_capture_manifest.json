@@ -1,0 +1,16 @@
+﻿[
+  {
+    "id": "xinhua_av_2026",
+    "label": "新华社网络视听报告",
+    "url": "https://www.news.cn/politics/20260415/d6bcb493ce874914a5a4904706eca27b/c.html",
+    "status": "ok",
+    "title": "新华鲜报丨强劲吸引力 中国网络视听用户10.99亿人-新华网",
+    "challengeDetected": false,
+    "topScreenshot": "examples/v5_sample_45s/assets/xinhua_av_2026_top.png",
+    "focusScreenshot": "examples/v5_sample_45s/assets/xinhua_av_2026_focus.png",
+    "annotatedScreenshot": "examples/v5_sample_45s/assets/xinhua_av_2026_annotated.png",
+    "boxesJson": "examples/v5_sample_45s/source_capture/xinhua_av_2026_boxes.json",
+    "matches": 1,
+    "error": null
+  }
+]

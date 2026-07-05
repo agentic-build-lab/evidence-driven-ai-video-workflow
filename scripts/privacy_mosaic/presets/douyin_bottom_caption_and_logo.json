@@ -1,0 +1,20 @@
+{
+  "regions": [
+    {
+      "label": "bottom_caption",
+      "normalized": true,
+      "x": 0.12,
+      "y": 0.66,
+      "width": 0.76,
+      "height": 0.13
+    },
+    {
+      "label": "shirt_logo",
+      "normalized": true,
+      "x": 0.0,
+      "y": 0.78,
+      "width": 0.26,
+      "height": 0.12
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+﻿{
+  "input": "work/reference_video_probe/douyin_jianying_digital_avatar\\public_sample_8s.mp4",
+  "output": "outputs/mosaic_samples/douyin_jianying_digital_avatar_strong_face_mosaic.mp4",
+  "mode": "faces",
+  "face_detector": "yunet",
+  "effect": "blur_mosaic",
+  "mask_shape": "ellipse",
+  "solid_color": "#171512",
+  "frame_width": 720,
+  "frame_height": 1280,
+  "fps": 30.0,
+  "input_frame_count": 240,
+  "processed_frame_count": 240,
+  "static_region_count": 0,
+  "frames_with_faces": 98,
+  "total_face_detections": 98,
+  "audio_muxed": true
+}

@@ -1,0 +1,75 @@
+﻿{
+  "id": "bilibili_openhome_doc",
+  "label": "Bilibili 开放平台文档",
+  "url": "https://openhome.bilibili.com/doc",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "challengeDetected": false,
+  "highlights": [
+    "视频管理",
+    "视频稿件的发布",
+    "数据开放"
+  ],
+  "boxes": [
+    {
+      "text": "视频管理",
+      "matchedText": "视频管理",
+      "rects": [
+        {
+          "x": 1068,
+          "y": 335,
+          "width": 88,
+          "height": 25,
+          "top": 335,
+          "left": 1068,
+          "right": 1156,
+          "bottom": 360
+        }
+      ]
+    },
+    {
+      "text": "视频稿件的发布",
+      "matchedText": "包括视频稿件的发布、删除和查询的能力",
+      "rects": [
+        {
+          "x": 1000,
+          "y": 377.296875,
+          "width": 224,
+          "height": 17,
+          "top": 377.296875,
+          "left": 1000,
+          "right": 1224,
+          "bottom": 394.296875
+        },
+        {
+          "x": 1080,
+          "y": 401.296875,
+          "width": 64,
+          "height": 17,
+          "top": 401.296875,
+          "left": 1080,
+          "right": 1144,
+          "bottom": 418.296875
+        }
+      ]
+    },
+    {
+      "text": "数据开放",
+      "matchedText": "数据开放",
+      "rects": [
+        {
+          "x": 284,
+          "y": 611,
+          "width": 88,
+          "height": 25,
+          "top": 611,
+          "left": 284,
+          "right": 372,
+          "bottom": 636
+        }
+      ]
+    }
+  ]
+}
