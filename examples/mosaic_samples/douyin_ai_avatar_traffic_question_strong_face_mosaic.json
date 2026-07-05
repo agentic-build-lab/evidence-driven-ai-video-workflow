@@ -1,0 +1,18 @@
+﻿{
+  "input": "work/reference_video_probe/douyin_ai_avatar_traffic_question\\public_sample_8s.mp4",
+  "output": "outputs/mosaic_samples/douyin_ai_avatar_traffic_question_strong_face_mosaic.mp4",
+  "mode": "faces",
+  "face_detector": "yunet",
+  "effect": "blur_mosaic",
+  "mask_shape": "ellipse",
+  "solid_color": "#171512",
+  "frame_width": 720,
+  "frame_height": 1280,
+  "fps": 30.0,
+  "input_frame_count": 240,
+  "processed_frame_count": 240,
+  "static_region_count": 0,
+  "frames_with_faces": 240,
+  "total_face_detections": 240,
+  "audio_muxed": true
+}

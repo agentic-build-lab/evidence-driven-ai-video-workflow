@@ -1,0 +1,72 @@
+[
+  {
+    "id": "douyin_creator_center",
+    "kind": "official_page",
+    "url": "https://creator.douyin.com/",
+    "label": "抖音创作服务平台",
+    "highlights": ["抖音创作者的专属服务平台", "授权管理", "内容管理"]
+  },
+  {
+    "id": "douyin_open_docs",
+    "kind": "official_page",
+    "url": "https://developer.open-douyin.com/docs-page",
+    "label": "抖音开放平台文档中心",
+    "highlights": ["开发者文档", "抖音开放平台"]
+  },
+  {
+    "id": "douyin_video_data",
+    "kind": "official_page",
+    "url": "https://developer.open-douyin.com/capacity-center-page/capacity-detail/7180522194714230845",
+    "label": "抖音开放平台：视频数据",
+    "highlights": ["查询用户特定视频的数据", "获取视频基础数据", "获取视频播放数据"]
+  },
+  {
+    "id": "douyin_publish_solution",
+    "kind": "official_page",
+    "url": "https://open.douyin.com/platform/resource/docs/ability/content-management/douyin-publish-solution",
+    "label": "抖音开放平台：内容发布",
+    "highlights": ["直接发布视频或图片内容至抖音", "推荐上传16:9", "支持常用视频格式"]
+  },
+  {
+    "id": "oceanengine_trendinsight",
+    "kind": "official_page",
+    "url": "https://trendinsight.oceanengine.com/",
+    "label": "抖音指数（原巨量算数）",
+    "highlights": ["抖音指数", "内容消费趋势"]
+  },
+  {
+    "id": "capcut_cn",
+    "kind": "official_page",
+    "url": "https://www.capcut.cn/",
+    "label": "剪映官网",
+    "highlights": ["全能AI创作伙伴", "AI成片", "AI配音"]
+  },
+  {
+    "id": "jimeng_ai",
+    "kind": "official_page",
+    "url": "https://jimeng.jianying.com/ai-tool/home",
+    "label": "即梦 AI",
+    "highlights": ["AI创作平台", "文字生成视频", "图片生成视频"]
+  },
+  {
+    "id": "volcengine_avatar",
+    "kind": "official_page",
+    "url": "https://www.volcengine.com/product/avatar",
+    "label": "火山引擎虚拟数字人",
+    "highlights": ["虚拟数字人", "唇形", "表情和动作"]
+  },
+  {
+    "id": "youyan3d",
+    "kind": "official_page",
+    "url": "https://www.youyan3d.com/",
+    "label": "魔珐有言",
+    "highlights": ["3D数字人AI视频平台", "无需拍摄剪辑", "一键生成"]
+  },
+  {
+    "id": "bilibili_openhome_doc",
+    "kind": "official_page",
+    "url": "https://openhome.bilibili.com/doc",
+    "label": "Bilibili 开放平台文档",
+    "highlights": ["视频管理", "视频稿件的发布", "数据开放"]
+  }
+]

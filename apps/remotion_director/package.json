@@ -1,0 +1,22 @@
+{
+  "name": "evidence-driven-ai-video-remotion-director",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "preview": "remotion preview src/index.ts",
+    "render:demo": "remotion render src/index.ts EvidenceSourceZoomDemo ../../outputs/evidence_source_zoom_demo.mp4",
+    "still:demo": "remotion still src/index.ts EvidenceSourceZoomDemo ../../outputs/evidence_source_zoom_demo_frame.jpg --frame=210",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.372",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "remotion": "^4.0.372"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.8.3"
+  }
+}

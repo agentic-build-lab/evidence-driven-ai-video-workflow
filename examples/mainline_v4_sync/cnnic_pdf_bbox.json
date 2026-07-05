@@ -1,0 +1,104 @@
+﻿{
+  "pdf": "examples/source_capture/official_sources/cnnic_55_statistical_report.pdf",
+  "image": "apps/remotion_director/public/sample_assets/official_cnnic_page_40.png",
+  "target": "short video users amounted to 1,040 million, making up 93.8% of all Internet users.",
+  "pageNumber": 40,
+  "pageSize": {
+    "width": 595.32,
+    "height": 841.92
+  },
+  "imageSize": {
+    "width": 1820,
+    "height": 2573
+  },
+  "scale": {
+    "x": 3.0571793321238996,
+    "y": 3.0561098441657166
+  },
+  "pdfBbox": {
+    "x0": 89.904,
+    "top": 126.02095999999995,
+    "x1": 441.50975999999986,
+    "bottom": 136.58096
+  },
+  "pdfBboxPadded": {
+    "x0": 87.904,
+    "top": 123.82095999999994,
+    "x1": 443.50975999999986,
+    "bottom": 138.78096
+  },
+  "pdfLineBboxes": [
+    {
+      "x0": 89.904,
+      "top": 126.02095999999995,
+      "x1": 441.50975999999986,
+      "bottom": 136.58096
+    }
+  ],
+  "pdfLineBboxesPadded": [
+    {
+      "x0": 87.904,
+      "top": 123.82095999999994,
+      "x1": 443.50975999999986,
+      "bottom": 138.78096
+    }
+  ],
+  "imageBbox": {
+    "x": 275,
+    "y": 385,
+    "width": 1075,
+    "height": 32,
+    "right": 1350,
+    "bottom": 417
+  },
+  "imageBboxPadded": {
+    "x": 269,
+    "y": 378,
+    "width": 1087,
+    "height": 46,
+    "right": 1356,
+    "bottom": 424
+  },
+  "imageLineBboxes": [
+    {
+      "x": 275,
+      "y": 385,
+      "width": 1075,
+      "height": 32,
+      "right": 1350,
+      "bottom": 417
+    }
+  ],
+  "imageLineBboxesPadded": [
+    {
+      "x": 269,
+      "y": 378,
+      "width": 1087,
+      "height": 46,
+      "right": 1356,
+      "bottom": 424
+    }
+  ],
+  "imageUnderlineSegments": [
+    {
+      "x": 269,
+      "y": 433,
+      "width": 1087,
+      "height": 9
+    }
+  ],
+  "imageBackgroundSegments": [
+    {
+      "x": 267,
+      "y": 376,
+      "width": 1091,
+      "height": 50
+    }
+  ],
+  "preferredStyle": "line_box",
+  "fallbackStyles": [
+    "underline",
+    "background"
+  ],
+  "matchedText": "short video users amounted to 1,040 million, making up 93.8% of all Internet users."
+}

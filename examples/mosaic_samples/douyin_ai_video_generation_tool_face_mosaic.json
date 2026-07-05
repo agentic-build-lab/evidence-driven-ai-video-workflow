@@ -1,0 +1,18 @@
+﻿{
+  "input": "work/reference_video_probe/douyin_ai_video_generation_tool\\public_sample_8s.mp4",
+  "output": "outputs/mosaic_samples/douyin_ai_video_generation_tool_face_mosaic.mp4",
+  "mode": "faces",
+  "face_detector": "yunet",
+  "effect": "mosaic",
+  "mask_shape": "rectangle",
+  "solid_color": "#171512",
+  "frame_width": 1080,
+  "frame_height": 1920,
+  "fps": 25.0,
+  "input_frame_count": 65,
+  "processed_frame_count": 65,
+  "static_region_count": 0,
+  "frames_with_faces": 1,
+  "total_face_detections": 2,
+  "audio_muxed": true
+}

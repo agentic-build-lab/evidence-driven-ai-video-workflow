@@ -1,0 +1,16 @@
+﻿{
+  "id": "jimeng_ai",
+  "label": "即梦 AI",
+  "url": "https://jimeng.jianying.com/ai-tool/home",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "challengeDetected": false,
+  "highlights": [
+    "AI创作平台",
+    "文字生成视频",
+    "图片生成视频"
+  ],
+  "boxes": []
+}

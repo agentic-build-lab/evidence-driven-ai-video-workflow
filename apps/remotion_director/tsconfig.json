@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/index.ts",
+    "src/root.tsx",
+    "src/evidence_source_zoom_demo.tsx",
+    "src/cnnic_pdf_bbox_v4.ts",
+    "src/sync_events_v4.ts"
+  ]
+}

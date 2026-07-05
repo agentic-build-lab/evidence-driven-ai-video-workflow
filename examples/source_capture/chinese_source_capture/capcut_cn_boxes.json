@@ -1,0 +1,33 @@
+﻿{
+  "id": "capcut_cn",
+  "label": "剪映官网",
+  "url": "https://www.capcut.cn/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "challengeDetected": false,
+  "highlights": [
+    "全能AI创作伙伴",
+    "AI成片",
+    "AI配音"
+  ],
+  "boxes": [
+    {
+      "text": "全能AI创作伙伴",
+      "matchedText": "你的全能AI创作伙伴，助力一站式创作",
+      "rects": [
+        {
+          "x": 120,
+          "y": 385.125,
+          "width": 305.96875,
+          "height": 24,
+          "top": 385.125,
+          "left": 120,
+          "right": 425.96875,
+          "bottom": 409.125
+        }
+      ]
+    }
+  ]
+}

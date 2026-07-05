@@ -1,0 +1,5 @@
+pdfplumber
+pillow
+opencv-python-headless
+numpy
+

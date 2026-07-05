@@ -1,0 +1,65 @@
+﻿{
+  "id": "douyin_publish_solution",
+  "label": "抖音开放平台：内容发布",
+  "url": "https://open.douyin.com/platform/resource/docs/ability/content-management/douyin-publish-solution",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "challengeDetected": false,
+  "highlights": [
+    "直接发布视频或图片内容至抖音",
+    "推荐上传16:9",
+    "支持常用视频格式"
+  ],
+  "boxes": [
+    {
+      "text": "直接发布视频或图片内容至抖音",
+      "matchedText": "本文档面向期望以open_api的形式对接抖音开放平台，直接发布视频或图片内容至抖音的开发者",
+      "rects": [
+        {
+          "x": 400,
+          "y": 198.078125,
+          "width": 588.234375,
+          "height": 19,
+          "top": 198.078125,
+          "left": 400,
+          "right": 988.234375,
+          "bottom": 217.078125
+        }
+      ]
+    },
+    {
+      "text": "推荐上传16:9",
+      "matchedText": "为了更好的观看体验，推荐上传16:9，分辨率为720p（1280x720）及以上的竖版视频",
+      "rects": [
+        {
+          "x": 448,
+          "y": 518.453125,
+          "width": 521.8125,
+          "height": 19,
+          "top": 518.453125,
+          "left": 448,
+          "right": 969.8125,
+          "bottom": 537.453125
+        }
+      ]
+    },
+    {
+      "text": "支持常用视频格式",
+      "matchedText": "支持常用视频格式，推荐使用 mp4 、webm",
+      "rects": [
+        {
+          "x": 448,
+          "y": 543.640625,
+          "width": 269.234375,
+          "height": 19,
+          "top": 543.640625,
+          "left": 448,
+          "right": 717.234375,
+          "bottom": 562.640625
+        }
+      ]
+    }
+  ]
+}

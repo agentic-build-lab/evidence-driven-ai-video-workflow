@@ -1,0 +1,16 @@
+﻿{
+  "id": "volcengine_avatar",
+  "label": "火山引擎虚拟数字人",
+  "url": "https://www.volcengine.com/product/avatar",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "challengeDetected": false,
+  "highlights": [
+    "虚拟数字人",
+    "唇形",
+    "表情和动作"
+  ],
+  "boxes": []
+}
