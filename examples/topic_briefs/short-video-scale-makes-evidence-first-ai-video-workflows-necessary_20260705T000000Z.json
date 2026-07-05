@@ -1,0 +1,37 @@
+{
+  "brief_id": "short-video-scale-makes-evidence-first-ai-video-workflows-necessary_20260705T000000Z",
+  "created_at": "2026-07-05T00:00:00Z",
+  "discovery_mode": "offline_fixture",
+  "review_gate": "human_topic_review_required_before_capture_or_render",
+  "topic": "Short-video scale makes evidence-first AI video workflows necessary",
+  "hook": "If short video reaches almost everyone online, AI video tooling needs proof trails, not just faster editing.",
+  "why_now": "The checked-in CNNIC report fixture provides a stable official-data example for demonstrating source-first production without live network access.",
+  "source_candidates": [
+    {
+      "title": "CNNIC 55th Statistical Report page 40 fixture",
+      "url": "examples/source_capture/official_sources/cnnic_55_statistical_report.pdf",
+      "source_type": "official_report_pdf_fixture",
+      "priority": 1,
+      "evidence_expected": "Short-video user scale and percentage of internet users."
+    },
+    {
+      "title": "Xinhua network audiovisual 2026 screenshot fixture",
+      "url": "examples/source_capture/official_source_screenshots/xinhua_network_av_2026_full.png",
+      "source_type": "official_webpage_screenshot_fixture",
+      "priority": 2,
+      "evidence_expected": "Industry context screenshot for source-zoom demo."
+    }
+  ],
+  "video_angle": "Use the official user-scale data point to explain why AI video automation should track sources, screenshots, cue timing, privacy masks, and review decisions.",
+  "evidence_needed": [
+    "PDF page screenshot",
+    "PDF bbox for the exact statistic",
+    "source manifest with rights notes",
+    "sync event mapping voiceover cue to highlighted line"
+  ],
+  "risk_notes": [
+    "Fixture is suitable for internal reproducibility; external publishing needs fresh source URL capture and rights review.",
+    "No public-reference video or human faces should be added until privacy review is complete."
+  ],
+  "risk_level": "low_internal_fixture"
+}

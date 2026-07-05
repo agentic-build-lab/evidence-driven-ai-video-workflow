@@ -1,0 +1,42 @@
+name: Environment Audit
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/environment-audit.yml"
+      - "requirements.txt"
+      - "scripts/workflow/audit_environment.py"
+      - "apps/remotion_director/package*.json"
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "npm"
+          cache-dependency-path: apps/remotion_director/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - name: Install system render dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Install Remotion dependencies
+        working-directory: apps/remotion_director
+        run: npm ci
+      - name: Ensure Remotion browser cache
+        working-directory: apps/remotion_director
+        run: npx remotion browser ensure || true
+      - name: Audit environment
+        run: python scripts/workflow/audit_environment.py
+      - name: Typecheck Remotion app
+        working-directory: apps/remotion_director
+        run: npm run typecheck

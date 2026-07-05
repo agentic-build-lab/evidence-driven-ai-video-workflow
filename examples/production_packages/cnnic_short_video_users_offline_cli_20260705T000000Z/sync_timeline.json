@@ -1,0 +1,38 @@
+{
+  "package_id": "cnnic_short_video_users_offline_cli_20260705T000000Z",
+  "composition_id": "EvidenceSourceZoomDemo",
+  "spec": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 20
+  },
+  "events": [
+    {
+      "start_ms": 0,
+      "end_ms": 3000,
+      "event_type": "hook",
+      "voiceover_text": "If short video reaches almost everyone online, AI video tooling needs proof trails, not just faster editing.",
+      "evidence_id": "cnnic_report_pdf_fixture",
+      "review_status": "draft"
+    },
+    {
+      "start_ms": 3000,
+      "end_ms": 9500,
+      "event_type": "source_zoom",
+      "voiceover_text": "Use the official report line as the claim-bearing evidence, then zoom to the exact bbox.",
+      "evidence_id": "cnnic_page_40_screenshot",
+      "bbox_path": "examples/mainline_v4_sync/cnnic_pdf_bbox.json",
+      "camera_action": "zoom_to_pdf_line_and_highlight",
+      "review_status": "needs_human_fact_check"
+    },
+    {
+      "start_ms": 9500,
+      "end_ms": 20000,
+      "event_type": "interpretation",
+      "voiceover_text": "Use the official user-scale data point to explain why AI video automation should track sources, screenshots, cue timing, privacy masks, and review decisions.",
+      "evidence_id": "cnnic_report_pdf_fixture",
+      "review_status": "draft"
+    }
+  ]
+}
