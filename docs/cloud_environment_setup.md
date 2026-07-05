@@ -53,3 +53,14 @@ The current Codex container still cannot install system packages because apt/PyP
 - `scripts/workflow/build_offline_production_package.py` and `scripts/workflow/validate_production_package.py` so manifest/review workflows can run without browser rendering.
 
 User/platform action is only required for account authorization, external material authorization, API keys, public-video copyright/commercial-use confirmation, real publishing decisions, or if a runner/base image must be changed to allow `ffmpeg` and Chrome/Chromium installation.
+
+## Preview fallback when real video render is unavailable
+
+When `npm run still:demo` or `npm run render:demo` cannot run because browser or ffmpeg dependencies are missing, the acceptable cloud fallback is:
+
+1. Generate or update the offline production package.
+2. Open/review `preview.html`.
+3. Review `sync_timeline.json`, `source_manifest.json`, `asset_manifest.csv`, `privacy_check.md`, `quality_review.md`, and `render_report.md`.
+4. Record whether the package should be retained, cleaned, or rerun after environment repair.
+
+The real MP4 should be generated in a GitHub runner, devcontainer, or local/CI environment with ffmpeg and Chrome/Chromium or Remotion Chrome Headless Shell available.
