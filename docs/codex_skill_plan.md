@@ -20,3 +20,13 @@
 - 引用视频必须写明授权风险。
 - 发布前保留人工 review gate。
 
+## Script Driven Montage Track
+
+- Plan: `docs/script_driven_video_montage_module_plan.md`
+- Reference target: user-provided Douyin creator `张见识`, resolved page
+  `https://www.douyin.com/video/7637080847639678259`.
+- The skill should evolve toward script-aware source discovery, clip matching,
+  rights review, edit-plan generation, Remotion rendering, and artifact upload
+  through GitHub Actions.
+- Do not frame this as unrestricted video copying. The durable module is
+  rights-aware, privacy-aware, and review-gated.
