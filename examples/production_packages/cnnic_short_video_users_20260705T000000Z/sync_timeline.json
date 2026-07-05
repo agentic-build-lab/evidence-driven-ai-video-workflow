@@ -1,0 +1,38 @@
+{
+    "package_id": "cnnic_short_video_users_20260705T000000Z",
+    "composition_id": "EvidenceSourceZoomDemo",
+    "spec": {
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "duration_seconds": 20
+    },
+    "events": [
+        {
+            "start_ms": 0,
+            "end_ms": 3000,
+            "event_type": "hook",
+            "voiceover_text": "\u77ed\u89c6\u9891\u4e0d\u662f\u4e00\u4e2a\u5c0f\u8d5b\u9053\uff0c\u5148\u770b\u5b98\u65b9\u62a5\u544a\u91cc\u7684\u89c4\u6a21\u3002",
+            "evidence_id": "cnnic_55_report_page_40",
+            "review_status": "draft"
+        },
+        {
+            "start_ms": 3000,
+            "end_ms": 9500,
+            "event_type": "source_zoom",
+            "voiceover_text": "\u8fd9\u91cc\u5199\u5230\u77ed\u89c6\u9891\u7528\u6237\u8fbe\u5230 10.4 \u4ebf\uff0c\u5360\u7f51\u6c11\u6574\u4f53 93.8%\u3002",
+            "evidence_id": "cnnic_55_report_page_40",
+            "bbox_path": "examples/mainline_v4_sync/cnnic_pdf_bbox.json",
+            "camera_action": "zoom_to_pdf_line_and_highlight",
+            "review_status": "needs_human_fact_check"
+        },
+        {
+            "start_ms": 9500,
+            "end_ms": 20000,
+            "event_type": "interpretation",
+            "voiceover_text": "\u6240\u4ee5 AI \u89c6\u9891\u751f\u4ea7\u5de5\u5177\u8981\u5148\u89e3\u51b3\u8bc1\u636e\u3001\u5f15\u7528\u548c\u53ef\u5ba1\u6838\uff0c\u800c\u4e0d\u662f\u53ea\u8ffd\u6c42\u81ea\u52a8\u526a\u8f91\u901f\u5ea6\u3002",
+            "evidence_id": "xinhua_network_av_2026_fixture",
+            "review_status": "draft"
+        }
+    ]
+}

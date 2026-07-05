@@ -1,0 +1,4 @@
+asset_id,asset_type,path,origin,public_commit_allowed,license_notes,risk_notes
+cnnic_page_40_screenshot,image,examples/source_capture/official_source_screenshots/cnnic_55_report_page_40.png,official_pdf_capture_fixture,true,fixture for evidence demo,confirm source URL before external publish
+xinhua_full_screenshot,image,examples/source_capture/official_source_screenshots/xinhua_network_av_2026_full.png,official_webpage_capture_fixture,true,fixture for evidence demo,confirm source URL before external publish
+cnnic_bbox,json,examples/mainline_v4_sync/cnnic_pdf_bbox.json,pdf_bbox_extraction_fixture,true,derived bbox metadata,review cue alignment

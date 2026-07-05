@@ -1,5 +1,6 @@
-﻿{
-  "generatedAt": "2026-07-04T10:53:49.247Z",
+{
+  "generatedAt": "2026-07-05T00:00:00.000Z",
+  "captureDir": "examples/source_capture/chinese_source_capture",
   "plans": [
     {
       "id": "bilibili_openhome_doc",

@@ -1,0 +1,4 @@
+asset_id,asset_type,path,origin,public_commit_allowed,license_notes,risk_notes
+cnnic_report_pdf_fixture,pdf,examples/source_capture/official_sources/cnnic_55_statistical_report.pdf,offline_fixture,true,Fixture for internal evidence demo; verify official source URL before publication.,No personal data; external release still needs rights review.
+cnnic_page_40_screenshot,image,examples/source_capture/official_source_screenshots/cnnic_55_report_page_40.png,offline_fixture,true,Small checked-in screenshot fixture for reproducible source zoom.,Use only as internal fixture until fresh capture URL is confirmed.
+cnnic_bbox,json,examples/mainline_v4_sync/cnnic_pdf_bbox.json,derived_fixture,true,Derived bbox metadata.,Review cue alignment before render approval.

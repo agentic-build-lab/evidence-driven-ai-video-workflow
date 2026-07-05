@@ -1,0 +1,133 @@
+{
+  "package_id": "ice_water_stomach_video_montage_20260705T000000Z",
+  "topic": "喝冰水伤胃吗？冰水背了多少年的锅？",
+  "orientation": "landscape_16_9",
+  "review_gate": "human_review_required_before_publish",
+  "sources": [
+    {
+      "source_id": "commons_ice_cubes_melting_glass",
+      "title": "Ice cubes melting in a glass",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ice_cubes_melting_in_a_glass.ogv",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ice_cubes_melting_in_a_glass.ogv",
+      "license_review": "Wikimedia Commons file page; verify exact license before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "引入主题：冰水和日常误解"
+    },
+    {
+      "source_id": "commons_sloshing_water_2020",
+      "title": "Sloshing water, 2020",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Sloshing_water,_2020.webm",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sloshing_water,_2020.webm",
+      "license_review": "Wikimedia Commons file page; verify exact license before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "生活场景：水进入身体前只是温度刺激"
+    },
+    {
+      "source_id": "commons_water_video",
+      "title": "Water Video",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Water_Video.webm",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Water_Video.webm",
+      "license_review": "Wikimedia Commons file page; verify exact license before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "场景补充：喝水/水的日常语境"
+    },
+    {
+      "source_id": "commons_digestio_aparatua",
+      "title": "Digestio aparatua",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Digestio_aparatua.webm",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Digestio_aparatua.webm",
+      "license_review": "Wikimedia Commons file page; verify exact license before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "机理解释：消化系统示意"
+    },
+    {
+      "source_id": "commons_intussusception",
+      "title": "Intussusception",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Intussusception.webm",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Intussusception.webm",
+      "license_review": "Wikimedia Commons medical animation; verify exact license and medical-context appropriateness before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "个体差异/医学谨慎：腹部不适不能一概归因于冰水"
+    }
+  ],
+  "timeline": [
+    {
+      "clip_id": "clip_01_hook_ice",
+      "source_id": "commons_ice_cubes_melting_glass",
+      "start_ms": 0,
+      "end_ms": 7000,
+      "source_in_sec": 0,
+      "source_out_sec": 7,
+      "crop": "landscape_fit_center",
+      "caption": "喝冰水真的会“伤胃”吗？先别急着让冰水背锅。",
+      "source_credit": "Wikimedia Commons: Ice cubes melting in a glass",
+      "risk_note": "yellow: verify file license before public release",
+      "visual_action": "cold-water hook, quick title card, source credit lower third"
+    },
+    {
+      "clip_id": "clip_02_life_scene",
+      "source_id": "commons_sloshing_water_2020",
+      "start_ms": 7000,
+      "end_ms": 16000,
+      "source_in_sec": 0,
+      "source_out_sec": 9,
+      "crop": "landscape_fit_center",
+      "caption": "多数时候，冰水只是短暂的温度刺激；关键是你身体当时的状态。",
+      "source_credit": "Wikimedia Commons: Sloshing water, 2020",
+      "risk_note": "yellow: verify file license before public release",
+      "visual_action": "生活经验段，字幕安全区居下"
+    },
+    {
+      "clip_id": "clip_03_daily_water_context",
+      "source_id": "commons_water_video",
+      "start_ms": 16000,
+      "end_ms": 26000,
+      "source_in_sec": 2,
+      "source_out_sec": 12,
+      "crop": "landscape_fit_center",
+      "caption": "水进入胃里后会很快和体温、食物、胃液混在一起，不是一直保持冰冷。",
+      "source_credit": "Wikimedia Commons: Water Video",
+      "risk_note": "yellow: verify file license and any identifiable people before public release",
+      "visual_action": "日常语境补充，保留 review 标记"
+    },
+    {
+      "clip_id": "clip_04_mechanism",
+      "source_id": "commons_digestio_aparatua",
+      "start_ms": 26000,
+      "end_ms": 41000,
+      "source_in_sec": 0,
+      "source_out_sec": 15,
+      "crop": "landscape_fit_center",
+      "caption": "真正要解释的是胃肠道的敏感性：有人没感觉，有人会因为痉挛、反流或原本不适而难受。",
+      "source_credit": "Wikimedia Commons: Digestio aparatua",
+      "risk_note": "yellow: verify medical illustration license before public release",
+      "visual_action": "机理解释段，允许慢推和关键词高亮"
+    },
+    {
+      "clip_id": "clip_05_individual_difference",
+      "source_id": "commons_intussusception",
+      "start_ms": 41000,
+      "end_ms": 56000,
+      "source_in_sec": 0,
+      "source_out_sec": 15,
+      "crop": "landscape_fit_center",
+      "caption": "结论：冰水不是万能背锅侠；如果你本来胃痛、反流、腹泻或术后恢复，就要按个体情况调整。",
+      "source_credit": "Wikimedia Commons: Intussusception",
+      "risk_note": "yellow: medical-context caution; human review required",
+      "visual_action": "医学谨慎段，结论必须回扣 source manifest"
+    },
+    {
+      "clip_id": "clip_06_review_gate",
+      "source_id": "package_manifest",
+      "start_ms": 56000,
+      "end_ms": 60000,
+      "source_in_sec": 0,
+      "source_out_sec": 4,
+      "crop": "generated_review_card",
+      "caption": "发布前检查：来源许可、字幕语义、医学表述、隐私与版权风险。",
+      "source_credit": "Internal review gate",
+      "risk_note": "green: generated text card, no external media",
+      "visual_action": "review gate card, no auto-publish"
+    }
+  ]
+}

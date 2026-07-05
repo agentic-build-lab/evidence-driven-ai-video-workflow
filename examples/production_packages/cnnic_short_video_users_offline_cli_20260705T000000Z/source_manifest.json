@@ -1,0 +1,27 @@
+{
+  "package_id": "cnnic_short_video_users_offline_cli_20260705T000000Z",
+  "topic": "Short-video scale makes evidence-first AI video workflows necessary",
+  "discovery_mode": "offline_fixture",
+  "sources": [
+    {
+      "id": "cnnic_55th_statistical_report_page_40_fixture",
+      "title": "CNNIC 55th Statistical Report page 40 fixture",
+      "source_type": "official_report_pdf_fixture",
+      "url_or_path": "examples/source_capture/official_sources/cnnic_55_statistical_report.pdf",
+      "priority": 1,
+      "evidence_expected": "Short-video user scale and percentage of internet users.",
+      "capture_mode": "offline_fixture",
+      "review_status": "needs_human_source_confirmation_before_public_release"
+    },
+    {
+      "id": "xinhua_network_audiovisual_2026_screenshot_fixture",
+      "title": "Xinhua network audiovisual 2026 screenshot fixture",
+      "source_type": "official_webpage_screenshot_fixture",
+      "url_or_path": "examples/source_capture/official_source_screenshots/xinhua_network_av_2026_full.png",
+      "priority": 2,
+      "evidence_expected": "Industry context screenshot for source-zoom demo.",
+      "capture_mode": "offline_fixture",
+      "review_status": "needs_human_source_confirmation_before_public_release"
+    }
+  ]
+}

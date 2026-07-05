@@ -1,0 +1,38 @@
+{
+  "default_mode": "official_and_public_frontdoor_first",
+  "review_gate": "human_topic_review_required_before_capture_or_render",
+  "providers": [
+    {
+      "id": "official_web_search",
+      "priority": 1,
+      "status": "planned",
+      "allowed_inputs": ["official_url", "report_pdf", "regulator_page", "company_docs", "public_dataset"],
+      "compliance_boundary": "Use official/public pages and user-provided URLs. Do not bypass login, paywalls, robots restrictions, or rate limits.",
+      "output": "source_candidates"
+    },
+    {
+      "id": "public_video_frontdoor",
+      "priority": 2,
+      "status": "planned_review_required",
+      "platforms": ["YouTube", "Bilibili", "Douyin", "TikTok", "X", "Xiaohongshu"],
+      "compliance_boundary": "Use only public frontdoor metadata or user-provided links by default. Downloading, clipping, or reuse requires rights/privacy review.",
+      "output": "public_reference_leads"
+    },
+    {
+      "id": "social_comment_or_trend_adapter",
+      "priority": 3,
+      "status": "isolated_low_priority_fallback",
+      "platforms": ["Douyin", "Bilibili", "X", "TikTok", "Xiaohongshu"],
+      "compliance_boundary": "Treat comments/accounts as sensitive. Mask identities and keep only minimal evidence needed for review. Crawling is isolated and disabled by default.",
+      "output": "risk_scored_leads"
+    },
+    {
+      "id": "offline_fixture",
+      "priority": 0,
+      "status": "enabled",
+      "allowed_inputs": ["checked_in_fixture", "user_supplied_file"],
+      "compliance_boundary": "Use checked-in examples when live internet or rights-cleared media are unavailable. Mark discovery_mode as offline_fixture.",
+      "output": "topic_brief"
+    }
+  ]
+}
