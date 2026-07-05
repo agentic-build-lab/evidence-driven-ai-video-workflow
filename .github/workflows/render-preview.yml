@@ -1,0 +1,114 @@
+name: Render preview
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+      - "codex/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: evidence-render-preview-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    name: Validate and render evidence demo
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      PYTHONUTF8: "1"
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: apps/remotion_director/package-lock.json
+
+      - name: Install render runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            ffmpeg \
+            fonts-dejavu-core \
+            fonts-noto-cjk \
+            fonts-noto-color-emoji \
+            libatk-bridge2.0-0 \
+            libatk1.0-0 \
+            libcups2 \
+            libdrm2 \
+            libgtk-3-0 \
+            libnss3 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxfixes3 \
+            libxkbcommon0 \
+            libxrandr2 \
+            xdg-utils
+          if ! command -v google-chrome >/dev/null 2>&1 \
+             && ! command -v chromium >/dev/null 2>&1 \
+             && ! command -v chromium-browser >/dev/null 2>&1; then
+            sudo apt-get install -y --no-install-recommends chromium || true
+          fi
+          CHROME_BIN="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROME_BIN" ]; then
+            echo "No Chrome or Chromium executable found" >&2
+            exit 1
+          fi
+          echo "CHROME_PATH=$CHROME_BIN" >> "$GITHUB_ENV"
+          echo "PUPPETEER_EXECUTABLE_PATH=$CHROME_BIN" >> "$GITHUB_ENV"
+          ffmpeg -version | head -n 1
+          "$CHROME_BIN" --version
+          fc-match "Noto Sans CJK SC" || true
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt pytest
+
+      - name: Install Remotion dependencies
+        working-directory: apps/remotion_director
+        run: npm ci
+
+      - name: Typecheck Remotion app
+        working-directory: apps/remotion_director
+        run: npm run typecheck
+
+      - name: Render evidence still
+        working-directory: apps/remotion_director
+        run: npm run still:demo
+
+      - name: Render evidence video
+        working-directory: apps/remotion_director
+        run: npm run render:demo
+
+      - name: Check render outputs
+        run: |
+          test -f outputs/evidence_source_zoom_demo_frame.jpg
+          test -f outputs/evidence_source_zoom_demo.mp4
+
+      - name: Upload preview artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence-driven-ai-video-preview
+          path: |
+            outputs/evidence_source_zoom_demo_frame.jpg
+            outputs/evidence_source_zoom_demo.mp4
+          retention-days: 14
+          if-no-files-found: error
