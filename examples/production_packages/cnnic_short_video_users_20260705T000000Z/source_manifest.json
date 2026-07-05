@@ -1,0 +1,26 @@
+{
+    "package_id": "cnnic_short_video_users_20260705T000000Z",
+    "topic": "CNNIC short-video user scale evidence demo",
+    "discovery_mode": "offline_fixture",
+    "sources": [
+        {
+            "id": "cnnic_55_report_page_40",
+            "source_type": "official_report_pdf_fixture",
+            "title": "CNNIC 55th Statistical Report page 40 fixture",
+            "artifact_path": "examples/source_capture/official_sources/cnnic_55_statistical_report.pdf",
+            "screenshot_path": "examples/source_capture/official_source_screenshots/cnnic_55_report_page_40.png",
+            "bbox_path": "examples/mainline_v4_sync/cnnic_pdf_bbox.json",
+            "evidence_text": "short video users amounted to 1,040 million, making up 93.8% of all Internet users.",
+            "rights_notes": "Checked-in fixture for internal reproducible demo; verify official distribution URL before external publication.",
+            "review_status": "needs_human_source_url_confirmation"
+        },
+        {
+            "id": "xinhua_network_av_2026_fixture",
+            "source_type": "official_webpage_screenshot_fixture",
+            "title": "Xinhua network audiovisual 2026 screenshot fixture",
+            "screenshot_path": "examples/source_capture/official_source_screenshots/xinhua_network_av_2026_full.png",
+            "rights_notes": "Screenshot fixture for source-zoom demo; external publication requires URL/time recapture and fair-use review.",
+            "review_status": "needs_human_source_url_confirmation"
+        }
+    ]
+}
