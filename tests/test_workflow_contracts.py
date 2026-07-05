@@ -46,6 +46,9 @@ def test_sync_timeline_basic_contract() -> None:
     assert events == sorted(events, key=lambda event: event["start_ms"])
     assert all(event["end_ms"] > event["start_ms"] for event in events)
     assert all(event.get("voiceover_text") for event in events)
+    for event in events:
+        for key in ["source_id", "visual_action", "zoom_or_highlight", "privacy_action", "voiceover_density", "comfort_note"]:
+            assert event.get(key), key
 
 
 def test_privacy_mask_preset_contract() -> None:
