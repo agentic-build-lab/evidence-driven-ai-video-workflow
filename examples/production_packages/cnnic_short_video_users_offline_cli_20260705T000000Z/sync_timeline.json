@@ -1,0 +1,98 @@
+{
+  "package_id": "cnnic_short_video_users_offline_cli_20260705T000000Z",
+  "composition_id": "EvidenceSourceZoomDemo",
+  "rhythm_grammar": "docs/reference_style_rhythm_study.md#evidence-timing-grammar",
+  "spec": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 59
+  },
+  "events": [
+    {
+      "start_ms": 0,
+      "end_ms": 3000,
+      "event_type": "hook",
+      "source_id": "topic_brief_fixture",
+      "voiceover_text": "If short video reaches almost everyone online, AI video tooling needs proof trails, not just faster editing.",
+      "evidence_id": "cnnic_report_pdf_fixture",
+      "visual_action": "Large conflict subtitle with a quick source teaser card; no external footage.",
+      "zoom_or_highlight": "No zoom yet; prepare viewer for official evidence.",
+      "privacy_action": "No people, accounts, comments, QR codes, or public-video UI shown.",
+      "voiceover_density": "high: one concise hook sentence in 3 seconds",
+      "comfort_note": "Avoid unsupported claims; frame as a question/why-now hook.",
+      "review_status": "draft"
+    },
+    {
+      "start_ms": 3000,
+      "end_ms": 8000,
+      "event_type": "first_official_evidence",
+      "source_id": "cnnic_55th_statistical_report_page_40_fixture",
+      "voiceover_text": "First, show the official report page before interpreting the number.",
+      "evidence_id": "cnnic_page_40_screenshot",
+      "visual_action": "Wide PDF screenshot with source label and quick line-box hint.",
+      "zoom_or_highlight": "Fast initial highlight around the target line; keep the page frame visible.",
+      "privacy_action": "No masking needed; official report fixture contains no personal identifiers.",
+      "voiceover_density": "medium: introduce source provenance, not full interpretation",
+      "comfort_note": "Hold long enough for viewers to recognize this is an official source.",
+      "review_status": "needs_human_source_confirmation_before_public_release"
+    },
+    {
+      "start_ms": 8000,
+      "end_ms": 18000,
+      "event_type": "evidence_zoom",
+      "source_id": "cnnic_55th_statistical_report_page_40_fixture",
+      "voiceover_text": "Now zoom to the exact line: the statistic is the claim-bearing evidence, not decoration.",
+      "evidence_id": "cnnic_page_40_screenshot",
+      "bbox_path": "examples/mainline_v4_sync/cnnic_pdf_bbox.json",
+      "visual_action": "Dynamic push-in to the PDF bbox, then locked hold.",
+      "zoom_or_highlight": "zoom_to_pdf_line_and_highlight; underline and line-box synchronized to narration.",
+      "privacy_action": "No masking needed for this official PDF fixture.",
+      "voiceover_density": "medium-low: leave reading space during the zoom hold",
+      "comfort_note": "Do not move camera while the text is too small; let the highlighted line breathe.",
+      "review_status": "needs_human_fact_check"
+    },
+    {
+      "start_ms": 18000,
+      "end_ms": 35000,
+      "event_type": "second_evidence_or_context",
+      "source_id": "xinhua_network_av_2026_fixture",
+      "voiceover_text": "Then add a second context source or chart to explain why source tracking matters for AI video workflows.",
+      "evidence_id": "xinhua_network_av_2026_fixture",
+      "visual_action": "Split-screen source/context card or chart placeholder; no public-video insert in this fixture.",
+      "zoom_or_highlight": "Gentle Ken Burns-style push on context image; highlight only the relevant label.",
+      "privacy_action": "If a future public-video window is inserted here, mask faces, accounts, comments, QR codes, logos, and sensitive subtitles before render.",
+      "voiceover_density": "medium: one supporting idea plus one caveat",
+      "comfort_note": "Use context as support, not a second unsupported claim.",
+      "review_status": "draft"
+    },
+    {
+      "start_ms": 35000,
+      "end_ms": 55000,
+      "event_type": "evidence_backed_synthesis",
+      "source_id": "cnnic_55th_statistical_report_page_40_fixture",
+      "voiceover_text": "The conclusion must return to the evidence: automation is useful only if the source trail stays reviewable.",
+      "evidence_id": "cnnic_report_pdf_fixture",
+      "visual_action": "Return to source label and manifest path; show compact evidence chain.",
+      "zoom_or_highlight": "No new zoom; use subtle source-path highlight and cue-to-evidence labels.",
+      "privacy_action": "No public-video or personal data included.",
+      "voiceover_density": "medium: synthesis with explicit source callback",
+      "comfort_note": "Avoid overclaiming beyond the report statistic and workflow implication.",
+      "review_status": "draft"
+    },
+    {
+      "start_ms": 55000,
+      "end_ms": 59000,
+      "event_type": "review_gate",
+      "source_id": "package_manifest",
+      "voiceover_text": "Before publishing, review the source manifest, privacy check, and sync timeline.",
+      "evidence_id": "run_manifest",
+      "visual_action": "Review gate card listing source_manifest, privacy_check, sync_timeline, and render_report.",
+      "zoom_or_highlight": "Static checklist highlight; no camera motion.",
+      "privacy_action": "Confirm no secrets, cookies, raw public-video originals, or unclear-rights media are present.",
+      "voiceover_density": "low: short audit reminder",
+      "comfort_note": "End with review/verification, not an auto-publish call to action.",
+      "review_status": "human_review_required_before_publish"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "package_id": "ice_water_stomach_video_montage_20260705T000000Z",
+  "created_at": "2026-07-05T00:00:00Z",
+  "topic": "喝冰水伤胃吗？冰水背了多少年的锅？",
+  "orientation": "landscape_16_9",
+  "review_gate": "human_review_required_before_publish",
+  "paths": {
+    "source_manifest": "source_manifest.json",
+    "asset_manifest": "asset_manifest.csv",
+    "montage_timeline": "montage_timeline.json",
+    "preview": "preview.html",
+    "privacy_check": "privacy_check.md",
+    "render_report": "render_report.md",
+    "quality_review": "quality_review.md",
+    "recipe": "recipe.md"
+  },
+  "large_or_local_video_assets_committed": false,
+  "remote_video_urls_only": true
+}

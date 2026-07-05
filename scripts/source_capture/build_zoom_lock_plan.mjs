@@ -2,7 +2,21 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const workspaceRoot = process.cwd();
-const captureDir = path.join(workspaceRoot, 'outputs', 'chinese_source_capture');
+const preferredCaptureDir = process.env.CAPTURE_DIR
+  ? path.resolve(process.env.CAPTURE_DIR)
+  : path.join(workspaceRoot, 'outputs', 'chinese_source_capture');
+const fixtureCaptureDir = path.join(workspaceRoot, 'examples', 'source_capture', 'chinese_source_capture');
+
+const directoryExists = async (dir) => {
+  try {
+    const stat = await fs.stat(dir);
+    return stat.isDirectory();
+  } catch {
+    return false;
+  }
+};
+
+const captureDir = (await directoryExists(preferredCaptureDir)) ? preferredCaptureDir : fixtureCaptureDir;
 const outputPath = path.join(captureDir, 'zoom_lock_plan.json');
 
 const viewport = {width: 1440, height: 900};
@@ -22,7 +36,7 @@ const files = (await fs.readdir(captureDir)).filter((name) => name.endsWith('_bo
 const plans = [];
 
 for (const file of files) {
-  const data = JSON.parse(await fs.readFile(path.join(captureDir, file), 'utf8'));
+  const data = JSON.parse((await fs.readFile(path.join(captureDir, file), 'utf8')).replace(/^\uFEFF/, ''));
   const visibleMatches = (data.boxes || []).filter((match) =>
     match.rects?.some((rect) => rect.y >= 0 && rect.y <= viewport.height && rect.x >= 0 && rect.x <= viewport.width),
   );
@@ -89,5 +103,7 @@ for (const file of files) {
   });
 }
 
-await fs.writeFile(outputPath, JSON.stringify({generatedAt: new Date().toISOString(), plans}, null, 2), 'utf8');
-console.log(JSON.stringify({event: 'zoom_lock_plan_done', output: outputPath, count: plans.length}));
+const relativeCaptureDir = path.relative(workspaceRoot, captureDir) || '.';
+const generatedAt = process.env.GENERATED_AT || new Date().toISOString();
+await fs.writeFile(outputPath, JSON.stringify({generatedAt, captureDir: relativeCaptureDir, plans}, null, 2), 'utf8');
+console.log(JSON.stringify({event: 'zoom_lock_plan_done', output: outputPath, captureDir: relativeCaptureDir, generatedAt, count: plans.length}));

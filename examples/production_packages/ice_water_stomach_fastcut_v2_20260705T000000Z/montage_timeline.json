@@ -1,0 +1,141 @@
+{
+  "package_id": "ice_water_stomach_fastcut_v2_20260705T000000Z",
+  "topic": "喝冰水伤胃吗？快切科普版",
+  "orientation": "landscape_16_9",
+  "style_profile": "fast_cut_modern_bottom_caption",
+  "duration_ms": 54000,
+  "review_gate": "human_review_required_before_publish",
+  "timeline": [
+    {
+      "clip_id": "v2_01_open_question",
+      "source_id": "commons_ice_cubes_melting_glass",
+      "start_ms": 0,
+      "end_ms": 4500,
+      "source_in_sec": 0,
+      "source_out_sec": 4.5,
+      "duration_ms": 4500,
+      "crop": "landscape_fill_center_safe_bottom_caption",
+      "transition": "hard_cut",
+      "caption": "冰水，真伤胃？",
+      "caption_keywords": [
+        "冰水",
+        "伤胃"
+      ],
+      "source_credit": "Wikimedia Commons: Ice cubes melting in a glass",
+      "risk_note": "yellow: verify file license before public release",
+      "visual_action": "开场问题，底部大字字幕，快速进入主题"
+    },
+    {
+      "clip_id": "v2_02_ice_closeup",
+      "source_id": "commons_ice_cubes_melting_glass",
+      "start_ms": 4500,
+      "end_ms": 9500,
+      "source_in_sec": 4.5,
+      "source_out_sec": 9.5,
+      "duration_ms": 5000,
+      "crop": "landscape_fill_center_safe_bottom_caption",
+      "transition": "hard_cut",
+      "caption": "先别让它背锅。",
+      "caption_keywords": [
+        "背锅"
+      ],
+      "source_credit": "Wikimedia Commons: Ice cubes melting in a glass",
+      "risk_note": "yellow: verify file license before public release",
+      "visual_action": "冰水特写，硬切延续钩子"
+    },
+    {
+      "clip_id": "v2_03_drinking_speed",
+      "source_id": "commons_sloshing_water_2020",
+      "start_ms": 9500,
+      "end_ms": 16500,
+      "source_in_sec": 0,
+      "source_out_sec": 7,
+      "duration_ms": 7000,
+      "crop": "landscape_fill_center_safe_bottom_caption",
+      "transition": "hard_cut",
+      "caption": "很多不舒服，和喝得太快有关。",
+      "caption_keywords": [
+        "太快"
+      ],
+      "source_credit": "Wikimedia Commons: Sloshing water, 2020",
+      "risk_note": "yellow: verify file license before public release",
+      "visual_action": "喝法/速度段，不做花哨转场"
+    },
+    {
+      "clip_id": "v2_04_daily_context",
+      "source_id": "commons_water_video",
+      "start_ms": 16500,
+      "end_ms": 24500,
+      "source_in_sec": 2,
+      "source_out_sec": 10,
+      "duration_ms": 8000,
+      "crop": "landscape_fill_center_safe_bottom_caption",
+      "transition": "hard_cut",
+      "caption": "水进胃里，很快会被体温拉回去。",
+      "caption_keywords": [
+        "体温"
+      ],
+      "source_credit": "Wikimedia Commons: Water Video",
+      "risk_note": "yellow: verify file license and any identifiable people before public release",
+      "visual_action": "生活语境，字幕短句，不遮挡主体"
+    },
+    {
+      "clip_id": "v2_05_mechanism",
+      "source_id": "commons_digestio_aparatua",
+      "start_ms": 24500,
+      "end_ms": 37500,
+      "source_in_sec": 0,
+      "source_out_sec": 13,
+      "duration_ms": 13000,
+      "crop": "landscape_fit_center_safe_bottom_caption",
+      "transition": "hard_cut",
+      "caption": "重点是：你的胃肠当时敏不敏感。",
+      "caption_keywords": [
+        "胃肠",
+        "敏感"
+      ],
+      "source_credit": "Wikimedia Commons: Digestio aparatua",
+      "risk_note": "yellow: verify medical illustration license before public release",
+      "visual_action": "机理解释，轻微推近即可"
+    },
+    {
+      "clip_id": "v2_06_individual_difference",
+      "source_id": "commons_intussusception",
+      "start_ms": 37500,
+      "end_ms": 49500,
+      "source_in_sec": 0,
+      "source_out_sec": 12,
+      "duration_ms": 12000,
+      "crop": "landscape_fit_center_safe_bottom_caption",
+      "transition": "hard_cut",
+      "caption": "胃痛、反流、腹泻时，当然要少刺激。",
+      "caption_keywords": [
+        "胃痛",
+        "反流",
+        "腹泻"
+      ],
+      "source_credit": "Wikimedia Commons: Intussusception",
+      "risk_note": "yellow: medical-context caution; human review required",
+      "visual_action": "个体差异段，医学表述必须保守"
+    },
+    {
+      "clip_id": "v2_07_conclusion_gate",
+      "source_id": "package_manifest",
+      "start_ms": 49500,
+      "end_ms": 54000,
+      "source_in_sec": 0,
+      "source_out_sec": 4.5,
+      "duration_ms": 4500,
+      "crop": "generated_review_card",
+      "transition": "chapter_flash_3_frames_allowed",
+      "caption": "结论：冰水不是万能背锅侠。",
+      "caption_keywords": [
+        "结论",
+        "不是"
+      ],
+      "source_credit": "Internal review gate",
+      "risk_note": "green: generated text card, no external media",
+      "visual_action": "章节级极短闪白/暗场允许；显示 review gate，不自动发布"
+    }
+  ]
+}

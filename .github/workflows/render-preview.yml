@@ -1,0 +1,61 @@
+name: Render Preview
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/render-preview.yml"
+      - "apps/remotion_director/**"
+      - "examples/production_packages/**"
+      - "scripts/**"
+      - "configs/**"
+
+jobs:
+  render-preview:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "npm"
+          cache-dependency-path: apps/remotion_director/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - name: Setup Chrome for Remotion
+        uses: browser-actions/setup-chrome@v1
+      - name: Install ffmpeg and Python dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install -r requirements.txt
+      - name: Install Remotion dependencies
+        working-directory: apps/remotion_director
+        run: npm ci
+      - name: Build offline packages and gallery
+        run: |
+          python scripts/video_pipeline/build_video_montage_package.py --force
+          python scripts/workflow/build_sample_gallery.py
+          python scripts/workflow/validate_video_montage_package.py examples/production_packages/ice_water_stomach_video_montage_20260705T000000Z
+          python scripts/workflow/validate_production_package.py examples/production_packages/cnnic_short_video_users_offline_cli_20260705T000000Z
+      - name: Typecheck Remotion app
+        working-directory: apps/remotion_director
+        run: npm run typecheck
+      - name: Render still and mp4 demo
+        working-directory: apps/remotion_director
+        run: |
+          npm run still:demo
+          npm run render:demo
+      - name: Upload preview artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidence-preview-artifacts
+          path: |
+            outputs/**
+            docs/sample_gallery.md
+            examples/production_packages/ice_water_stomach_video_montage_20260705T000000Z/**
+            examples/production_packages/cnnic_short_video_users_offline_cli_20260705T000000Z/**
+          if-no-files-found: warn

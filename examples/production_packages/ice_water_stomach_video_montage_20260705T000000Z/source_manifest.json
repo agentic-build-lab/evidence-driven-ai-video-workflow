@@ -1,0 +1,63 @@
+{
+  "package_id": "ice_water_stomach_video_montage_20260705T000000Z",
+  "topic": "喝冰水伤胃吗？冰水背了多少年的锅？",
+  "source_discovery_mode": "public_frontdoor_urls_from_config",
+  "review_gate": "human_review_required_before_publish",
+  "sources": [
+    {
+      "source_id": "commons_ice_cubes_melting_glass",
+      "title": "Ice cubes melting in a glass",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ice_cubes_melting_in_a_glass.ogv",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ice_cubes_melting_in_a_glass.ogv",
+      "license_review": "Wikimedia Commons file page; verify exact license before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "引入主题：冰水和日常误解",
+      "download_policy": "do_not_download_in_codex_container; remote_preview_or_review_only",
+      "human_review_required": true
+    },
+    {
+      "source_id": "commons_sloshing_water_2020",
+      "title": "Sloshing water, 2020",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Sloshing_water,_2020.webm",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sloshing_water,_2020.webm",
+      "license_review": "Wikimedia Commons file page; verify exact license before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "生活场景：水进入身体前只是温度刺激",
+      "download_policy": "do_not_download_in_codex_container; remote_preview_or_review_only",
+      "human_review_required": true
+    },
+    {
+      "source_id": "commons_water_video",
+      "title": "Water Video",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Water_Video.webm",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Water_Video.webm",
+      "license_review": "Wikimedia Commons file page; verify exact license before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "场景补充：喝水/水的日常语境",
+      "download_policy": "do_not_download_in_codex_container; remote_preview_or_review_only",
+      "human_review_required": true
+    },
+    {
+      "source_id": "commons_digestio_aparatua",
+      "title": "Digestio aparatua",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Digestio_aparatua.webm",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Digestio_aparatua.webm",
+      "license_review": "Wikimedia Commons file page; verify exact license before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "机理解释：消化系统示意",
+      "download_policy": "do_not_download_in_codex_container; remote_preview_or_review_only",
+      "human_review_required": true
+    },
+    {
+      "source_id": "commons_intussusception",
+      "title": "Intussusception",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Intussusception.webm",
+      "video_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Intussusception.webm",
+      "license_review": "Wikimedia Commons medical animation; verify exact license and medical-context appropriateness before public release.",
+      "risk_level": "yellow",
+      "semantic_role": "个体差异/医学谨慎：腹部不适不能一概归因于冰水",
+      "download_policy": "do_not_download_in_codex_container; remote_preview_or_review_only",
+      "human_review_required": true
+    }
+  ]
+}
