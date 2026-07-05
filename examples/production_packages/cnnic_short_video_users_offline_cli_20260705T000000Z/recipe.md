@@ -16,7 +16,7 @@
 ## Highlight and zoom parameters
 
 - Composition target: `EvidenceSourceZoomDemo`
-- Intended video spec: 1080x1920, 30 fps, 20 seconds.
+- Intended video spec: 1080x1920, 30 fps, 59 seconds.
 - Evidence event: `source_zoom`, 3000-9500 ms.
 - Bbox path: `examples/mainline_v4_sync/cnnic_pdf_bbox.json`
 - Camera action: `zoom_to_pdf_line_and_highlight`.
@@ -65,3 +65,14 @@ npm run render:demo
 - Remotion still failed when Chrome Headless Shell download from `remotion.media` returned DNS `EAI_AGAIN`.
 - `ffmpeg` is not installed in this container.
 - No secrets, cookies, browser cache, raw public-video file, or large generated media should be committed.
+
+## Evidence timing grammar applied
+
+| Time | Event | source_id | visual_action | zoom_or_highlight | privacy_action | voiceover_density | comfort_note |
+|---:|---|---|---|---|---|---|---|
+| 0-3s | hook | `topic_brief_fixture` | conflict subtitle + source teaser | no zoom yet | no people/accounts/comments shown | high | do not overclaim before evidence appears |
+| 3-8s | first official evidence | `cnnic_55th_statistical_report_page_40_fixture` | wide PDF screenshot | quick target-line hint | no masking needed for official PDF | medium | show provenance before interpretation |
+| 8-18s | evidence zoom | `cnnic_55th_statistical_report_page_40_fixture` | push in to bbox and lock | line-box + underline synced to narration | no masking needed | medium-low | leave reading space |
+| 18-35s | second evidence/context | `xinhua_network_av_2026_fixture` | split-screen context/chart placeholder | gentle Ken Burns + label highlight | future public-video insert must be masked first | medium | context supports, not replaces, the source |
+| 35-55s | synthesis | `cnnic_55th_statistical_report_page_40_fixture` | source label + manifest path | subtle source-path highlight | no public-video data | medium | conclusion must point back to evidence |
+| 55-59s | review gate | `package_manifest` | review checklist card | static checklist highlight | confirm no secrets/raw public video | low | end with review, not auto-publish |

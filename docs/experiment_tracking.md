@@ -66,3 +66,11 @@ The workflow may generate auditable material and internal samples, but it must n
 - Promoted `examples/production_packages/cnnic_short_video_users_offline_cli_20260705T000000Z` to a B-grade offline review fixture with `quality_review.md`, `contact_sheet.md`, and `recipe.md`.
 - Kept `examples/production_packages/cnnic_short_video_users_20260705T000000Z` as a C-grade historical baseline: keep manifest-only until preview/recipe coverage exists.
 - Real MP4 remains blocked in this container by missing ffmpeg and Remotion Chrome/Chromium, so `preview.html`, package manifests, quality review, contact-sheet placeholder, and render report are the review artifacts for this milestone.
+
+## Reference rhythm milestone on 2026-07-05
+
+- Added `docs/reference_style_rhythm_study.md` to study explanatory-video pacing without copying footage, graphics, wording, or branding.
+- Applied the evidence timing grammar to `examples/production_packages/cnnic_short_video_users_offline_cli_20260705T000000Z/sync_timeline.json` with required fields: `source_id`, `visual_action`, `zoom_or_highlight`, `privacy_action`, `voiceover_density`, and `comfort_note`.
+- Updated `preview.html`, `render_report.md`, `privacy_check.md`, and `recipe.md` for the 59-second rhythm grammar fallback package.
+- Updated `validate_production_package.py` and tests so rhythm fields are enforced and cannot silently disappear from future package generation.
+- Real mp4/still remains blocked in this container by missing ffmpeg and Chrome/Chromium/Remotion Chrome cache; `preview.html` remains the review entry point.

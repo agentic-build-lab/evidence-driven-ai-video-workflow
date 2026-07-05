@@ -109,33 +109,93 @@ def sync_timeline(package_id: str, brief: dict[str, Any]) -> dict[str, Any]:
     return {
         "package_id": package_id,
         "composition_id": "EvidenceSourceZoomDemo",
-        "spec": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 20},
+        "rhythm_grammar": "docs/reference_style_rhythm_study.md#evidence-timing-grammar",
+        "spec": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 59},
         "events": [
             {
                 "start_ms": 0,
                 "end_ms": 3000,
                 "event_type": "hook",
+                "source_id": "topic_brief_fixture",
                 "voiceover_text": brief["hook"],
                 "evidence_id": "cnnic_report_pdf_fixture",
+                "visual_action": "Large conflict subtitle with a quick source teaser card; no external footage.",
+                "zoom_or_highlight": "No zoom yet; prepare viewer for official evidence.",
+                "privacy_action": "No people, accounts, comments, QR codes, or public-video UI shown.",
+                "voiceover_density": "high: one concise hook sentence in 3 seconds",
+                "comfort_note": "Avoid unsupported claims; frame as a question/why-now hook.",
                 "review_status": "draft",
             },
             {
                 "start_ms": 3000,
-                "end_ms": 9500,
-                "event_type": "source_zoom",
-                "voiceover_text": "Use the official report line as the claim-bearing evidence, then zoom to the exact bbox.",
+                "end_ms": 8000,
+                "event_type": "first_official_evidence",
+                "source_id": "cnnic_55th_statistical_report_page_40_fixture",
+                "voiceover_text": "First, show the official report page before interpreting the number.",
+                "evidence_id": "cnnic_page_40_screenshot",
+                "visual_action": "Wide PDF screenshot with source label and quick line-box hint.",
+                "zoom_or_highlight": "Fast initial highlight around the target line; keep the page frame visible.",
+                "privacy_action": "No masking needed; official report fixture contains no personal identifiers.",
+                "voiceover_density": "medium: introduce source provenance, not full interpretation",
+                "comfort_note": "Hold long enough for viewers to recognize this is an official source.",
+                "review_status": "needs_human_source_confirmation_before_public_release",
+            },
+            {
+                "start_ms": 8000,
+                "end_ms": 18000,
+                "event_type": "evidence_zoom",
+                "source_id": "cnnic_55th_statistical_report_page_40_fixture",
+                "voiceover_text": "Now zoom to the exact line: the statistic is the claim-bearing evidence, not decoration.",
                 "evidence_id": "cnnic_page_40_screenshot",
                 "bbox_path": "examples/mainline_v4_sync/cnnic_pdf_bbox.json",
-                "camera_action": "zoom_to_pdf_line_and_highlight",
+                "visual_action": "Dynamic push-in to the PDF bbox, then locked hold.",
+                "zoom_or_highlight": "zoom_to_pdf_line_and_highlight; underline and line-box synchronized to narration.",
+                "privacy_action": "No masking needed for this official PDF fixture.",
+                "voiceover_density": "medium-low: leave reading space during the zoom hold",
+                "comfort_note": "Do not move camera while the text is too small; let the highlighted line breathe.",
                 "review_status": "needs_human_fact_check",
             },
             {
-                "start_ms": 9500,
-                "end_ms": 20000,
-                "event_type": "interpretation",
-                "voiceover_text": brief["video_angle"],
-                "evidence_id": "cnnic_report_pdf_fixture",
+                "start_ms": 18000,
+                "end_ms": 35000,
+                "event_type": "second_evidence_or_context",
+                "source_id": "xinhua_network_av_2026_fixture",
+                "voiceover_text": "Then add a second context source or chart to explain why source tracking matters for AI video workflows.",
+                "evidence_id": "xinhua_network_av_2026_fixture",
+                "visual_action": "Split-screen source/context card or chart placeholder; no public-video insert in this fixture.",
+                "zoom_or_highlight": "Gentle Ken Burns-style push on context image; highlight only the relevant label.",
+                "privacy_action": "If a future public-video window is inserted here, mask faces, accounts, comments, QR codes, logos, and sensitive subtitles before render.",
+                "voiceover_density": "medium: one supporting idea plus one caveat",
+                "comfort_note": "Use context as support, not a second unsupported claim.",
                 "review_status": "draft",
+            },
+            {
+                "start_ms": 35000,
+                "end_ms": 55000,
+                "event_type": "evidence_backed_synthesis",
+                "source_id": "cnnic_55th_statistical_report_page_40_fixture",
+                "voiceover_text": "The conclusion must return to the evidence: automation is useful only if the source trail stays reviewable.",
+                "evidence_id": "cnnic_report_pdf_fixture",
+                "visual_action": "Return to source label and manifest path; show compact evidence chain.",
+                "zoom_or_highlight": "No new zoom; use subtle source-path highlight and cue-to-evidence labels.",
+                "privacy_action": "No public-video or personal data included.",
+                "voiceover_density": "medium: synthesis with explicit source callback",
+                "comfort_note": "Avoid overclaiming beyond the report statistic and workflow implication.",
+                "review_status": "draft",
+            },
+            {
+                "start_ms": 55000,
+                "end_ms": 59000,
+                "event_type": "review_gate",
+                "source_id": "package_manifest",
+                "voiceover_text": "Before publishing, review the source manifest, privacy check, and sync timeline.",
+                "evidence_id": "run_manifest",
+                "visual_action": "Review gate card listing source_manifest, privacy_check, sync_timeline, and render_report.",
+                "zoom_or_highlight": "Static checklist highlight; no camera motion.",
+                "privacy_action": "Confirm no secrets, cookies, raw public-video originals, or unclear-rights media are present.",
+                "voiceover_density": "low: short audit reminder",
+                "comfort_note": "End with review/verification, not an auto-publish call to action.",
+                "review_status": "human_review_required_before_publish",
             },
         ],
     }
@@ -155,7 +215,8 @@ def write_text_reports(package_dir: Path, package_id: str, brief: dict[str, Any]
         f"# Render Report\n\n"
         f"- Package: `{package_id}`\n"
         "- Render mode: offline package preview; no mp4 render attempted by this builder.\n"
-        "- Intended Remotion composition: `EvidenceSourceZoomDemo`, 1080x1920, 30 fps, 20 seconds.\n"
+        "- Intended Remotion composition: `EvidenceSourceZoomDemo`, 1080x1920, 30 fps, 59 seconds.\n"
+        "- Rhythm grammar: `docs/reference_style_rhythm_study.md#evidence-timing-grammar`.\n"
         "- Fallback output: `preview.html` and manifests for review when browser/ffmpeg are unavailable.\n"
         "- Review gate: human approval required before publish or live-source recapture.\n",
         encoding="utf-8",
@@ -167,6 +228,7 @@ def write_text_reports(package_dir: Path, package_id: str, brief: dict[str, Any]
         "<style>body{font-family:system-ui,sans-serif;max-width:960px;margin:40px auto;line-height:1.5} code{background:#eee;padding:2px 4px} .card{border:1px solid #ccc;padding:16px;margin:12px 0}</style>\n"
         f"<h1>{brief['topic']}</h1>\n"
         f"<p><strong>Hook:</strong> {brief['hook']}</p>\n"
+        "<p><strong>Rhythm:</strong> 0-3s hook, 3-8s official evidence, 8-18s bbox zoom, 18-35s context, 35-55s synthesis, final review gate.</p>\n"
         f"<p><strong>Review gate:</strong> human review required before capture/render/publication.</p>\n"
         "<div class=\"card\"><h2>Evidence fixture</h2><p><code>examples/source_capture/official_source_screenshots/cnnic_55_report_page_40.png</code></p></div>\n"
         "<div class=\"card\"><h2>Manifests</h2><ul><li>source_manifest.json</li><li>asset_manifest.csv</li><li>sync_timeline.json</li><li>privacy_check.md</li><li>render_report.md</li></ul></div>\n",

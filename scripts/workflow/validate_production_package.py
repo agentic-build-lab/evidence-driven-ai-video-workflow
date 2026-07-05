@@ -14,6 +14,14 @@ REQUIRED_FILES = [
     "privacy_check.md",
     "render_report.md",
 ]
+REQUIRED_EVENT_FIELDS = [
+    "source_id",
+    "visual_action",
+    "zoom_or_highlight",
+    "privacy_action",
+    "voiceover_density",
+    "comfort_note",
+]
 
 
 def parse_args() -> argparse.Namespace:
@@ -60,6 +68,8 @@ def validate_package(package_dir: Path) -> list[str]:
             last_end = end
         require(bool(event.get("voiceover_text")), f"event {index} voiceover_text is required", errors)
         require(bool(event.get("review_status")), f"event {index} review_status is required", errors)
+        for field in REQUIRED_EVENT_FIELDS:
+            require(bool(event.get(field)), f"event {index} {field} is required", errors)
 
     with (package_dir / "asset_manifest.csv").open(encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle))
