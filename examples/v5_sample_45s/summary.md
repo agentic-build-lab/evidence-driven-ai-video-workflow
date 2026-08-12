@@ -1,9 +1,9 @@
-﻿# v5_sample_45s_summary
+# v5_sample_45s_summary
 
 ## 交付物
 
-- 成片：`outputs/v5_sample_45s/codex_v5_sample_lipsync.mp4`
-- 抽帧总览：`outputs/v5_sample_45s/codex_v5_sample_lipsync_contact_sheet.jpg`
+- 成片：`outputs/v5_sample_45s/v5_sample_lipsync.mp4`
+- 抽帧总览：`outputs/v5_sample_45s/v5_sample_lipsync_contact_sheet.jpg`
 - 资产清单：`outputs/v5_sample_45s/asset_manifest.csv`
 - 口型同步状态：`outputs/v5_sample_45s/lip_sync_status.md`
 

@@ -1,4 +1,4 @@
-﻿id,type,path_or_url,status,use_in_sample,notes
+id,type,path_or_url,status,use_in_sample,notes
 generated_late_night_scrolling,generated_image,work/v5_sample/assets/generated_late_night_scrolling.png,ready,0-7s opening,cinematic night scrolling scene; no readable logos or platform UI
 generated_feed_montage,generated_image,work/v5_sample/assets/generated_feed_montage.png,ready,7-18s montage,abstract short-video feed overload; no real platform logos
 cnnic_report_page_40,official_pdf_render,work/v5_sample/assets/cnnic_report_page_40.png,ready,18-32s official report,CNNIC report page copied from v4 source asset
@@ -14,5 +14,5 @@ v5_full_presenter_old,transparent_talking_avatar,work/v5_sample/assets/heygen_v5
 v5_full_presenter_regenerated,transparent_talking_avatar,work/v5_sample/assets/heygen_v5_sample_lipsync_presenter.webm,ready,corner presenter,HeyGen job dacca47fb646488489d00f24cbd47727; final audio and mouth source
 remotion_public_presenter,transparent_talking_avatar,apps/remotion_director/public/local_assets/v5_sample/heygen_v5_sample_45s_presenter.webm,ready,corner presenter,copied public asset used by Remotion
 pubmed_notification,official_paper_page,work/v5_sample/assets/pubmed_notification_top.png,blocked,not used in sample,hit reCAPTCHA; use MANUAL_CAPTURE=1 when needed
-codex_v5_sample_lipsync,final_video,outputs/v5_sample_45s/codex_v5_sample_lipsync.mp4,ready,deliverable,1920x1080 30fps about 53.03s with AAC stereo audio
-codex_v5_sample_lipsync_contact_sheet,qa_image,outputs/v5_sample_45s/codex_v5_sample_lipsync_contact_sheet.jpg,ready,qa,frame overview used to inspect scene order and visual coverage
+v5_sample_lipsync,final_video,outputs/v5_sample_45s/v5_sample_lipsync.mp4,ready,deliverable,1920x1080 30fps about 53.03s with AAC stereo audio
+v5_sample_lipsync_contact_sheet,qa_image,outputs/v5_sample_45s/v5_sample_lipsync_contact_sheet.jpg,ready,qa,frame overview used to inspect scene order and visual coverage

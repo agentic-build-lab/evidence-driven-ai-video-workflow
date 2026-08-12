@@ -1,4 +1,4 @@
-﻿# lip_sync_status
+# lip_sync_status
 
 ## 当前状态
 
@@ -6,7 +6,7 @@
 - 这样可以保证角落数字人的嘴型和声音来自同一个素材，避免“嘴动一套、声音一套”的不同步问题。
 - 最终数字人素材：`work/v5_sample/assets/heygen_v5_sample_lipsync_presenter.webm`
 - Remotion public 素材：`apps/remotion_director/public/local_assets/v5_sample/heygen_v5_sample_45s_presenter.webm`
-- 最终合成视频：`outputs/v5_sample_45s/codex_v5_sample_lipsync.mp4`
+- 最终合成视频：`outputs/v5_sample_45s/v5_sample_lipsync.mp4`
 
 ## 校验结果
 

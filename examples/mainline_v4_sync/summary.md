@@ -1,8 +1,8 @@
-﻿# mainline_v4_sync_summary
+# mainline_v4_sync_summary
 
 ## 成片
 
-- 视频：`outputs/mainline_v4_sync/codex_mainline_sync_v4.mp4`
+- 视频：`outputs/mainline_v4_sync/mainline_sync_v4.mp4`
 - 规格：1920x1080，30fps，54.67 秒，H.264 + AAC
 - 同步事件表：`outputs/mainline_v4_sync/sync_event_timeline.json`
 - 同步事件 CSV：`outputs/mainline_v4_sync/sync_event_timeline.csv`
